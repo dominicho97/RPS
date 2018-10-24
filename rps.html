@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title><Rock-Paper-Scissors></title>
+
+  <link rel="stylesheet" type="text/css" href= "rps.css">
+
+</head>
+
+<body>
+  <script>
+  
+  
+
+    function computerPlay() {
+        let choice = ['Rock', 'Paper', 'Scissors'];
+        let indice = Math.floor(Math.random() * Math.floor(3)); // Saves a random number between 0, 1, 2
+        return choice[indice];
+
+    
+        
+
+function playRound(computerSelection, playerSelection){
+      switch (playerSelection){
+      case 'rock':
+        if (computerSelection == "Paper"){
+          console.log("You lost! Paper beats rock!")
+          return -1;
+
+        } else if (computerSelection == "Scissors"){
+          console.log('You won! ')
+          return 1
+        
+        } else {
+          return 0
+        }
+        break;
+
+
+  
+  
+  
+  </script>
+</body>
+</html>
