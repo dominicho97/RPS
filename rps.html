@@ -25,11 +25,11 @@ function playRound(computerSelection, playerSelection){
       switch (playerSelection){
       case 'rock':
         if (computerSelection == "Paper"){
-          console.log("You lost! Paper beats rock!")
+          console.log("You lose! Paper beats rock!")
           return -1;
 
         } else if (computerSelection == "Scissors"){
-          console.log('You won! ')
+          console.log('You win! ')
           return 1
         
         } else {
@@ -37,6 +37,20 @@ function playRound(computerSelection, playerSelection){
         }
         break;
 
+
+    case 'paper':
+    if (computerSelection == 'Scissors'){
+      console.log("You lose! Scissors beats paper!")
+      return -1
+    } else if (computerSelection == 'Rock'){
+      console.log('You win!')
+      return 1
+  } else {
+    return 0
+  }
+  break;
+    
+  
 
   
   
